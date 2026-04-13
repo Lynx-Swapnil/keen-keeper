@@ -52,7 +52,7 @@ export default function TimelinePage() {
   }, [entries, filter]);
 
   return (
-    <main className="mx-auto w-full max-w-5xl px-6 py-10">
+    <main className="mx-auto w-full max-w-5xl px-4 py-10 sm:px-6">
       <h1 className="text-4xl font-extrabold tracking-tight text-[#0f2747]">Timeline</h1>
 
       <div className="mt-4 flex justify-start">
@@ -63,7 +63,7 @@ export default function TimelinePage() {
           id="timeline-filter"
           value={filter}
           onChange={(event) => setFilter(event.target.value)}
-          className="h-11 w-64 rounded-md border border-zinc-200 bg-white px-3 text-sm text-[#64748b] shadow-[0_1px_2px_rgba(16,24,40,0.05)] outline-none focus:border-[#155946]"
+          className="h-11 w-full max-w-xs rounded-md border border-zinc-200 bg-white px-3 text-sm text-[#64748b] shadow-[0_1px_2px_rgba(16,24,40,0.05)] outline-none focus:border-[#155946] sm:w-64"
         >
           <option value="all">Filter timeline</option>
           <option value="call">Calls</option>
@@ -81,7 +81,7 @@ export default function TimelinePage() {
           return (
             <article
               key={entry.id}
-              className="flex items-center gap-4 rounded-md border border-zinc-200 bg-white px-4 py-3 shadow-[0_1px_2px_rgba(16,24,40,0.05)]"
+              className="flex flex-col gap-3 rounded-md border border-zinc-200 bg-white px-4 py-3 shadow-[0_1px_2px_rgba(16,24,40,0.05)] sm:flex-row sm:items-center"
             >
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#f8fafc] text-[#155946]">
                 <Icon className="text-xl" />
