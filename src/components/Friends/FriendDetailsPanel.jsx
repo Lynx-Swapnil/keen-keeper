@@ -2,9 +2,9 @@
 
 import React, { useMemo, useState } from 'react';
 import { FiMessageSquare, FiPhone, FiVideo } from 'react-icons/fi';
+import { toast } from 'react-toastify';
 import FriendCard from './FriendCard';
-
-const TIMELINE_STORAGE_KEY = 'keenkeeper_timeline_entries';
+import { addTimelineEntry } from '@/lib/timelineStore';
 
 const checkInButtons = [
   { key: 'call', label: 'Call', Icon: FiPhone },
@@ -34,23 +34,29 @@ const FriendDetailsPanel = ({ friend }) => {
   );
 
   const handleQuickCheckIn = (type) => {
-    const existing = window.localStorage.getItem(TIMELINE_STORAGE_KEY);
-    const parsedEntries = existing ? JSON.parse(existing) : [];
+    const today = new Date();
+    const formattedDate = today.toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric',
+    });
+    const title = `${type[0].toUpperCase() + type.slice(1)} with ${friend.name}`;
 
     const newEntry = {
-      id: `${friend.id}-${type}-${parsedEntries.length + 1}`,
+      id: `${friend.id}-${type}-${today.getTime()}`,
       friendId: friend.id,
       friendName: friend.name,
       type,
-      createdAt: 'now',
-      text: `${type[0].toUpperCase() + type.slice(1)} check-in with ${friend.name}`,
+      title,
+      date: today.toISOString(),
+      displayDate: formattedDate,
+      createdAt: today.toISOString(),
+      text: title,
     };
 
-    const nextEntries = [newEntry, ...parsedEntries];
-
-    window.localStorage.setItem(TIMELINE_STORAGE_KEY, JSON.stringify(nextEntries));
-    window.dispatchEvent(new CustomEvent('keenkeeper:timeline-updated'));
+    addTimelineEntry(newEntry);
     setFeedback(`${type[0].toUpperCase() + type.slice(1)} entry added to timeline.`);
+    toast.success(`${title} added to timeline`);
   };
 
   return (
