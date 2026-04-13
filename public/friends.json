@@ -7,7 +7,7 @@
     "days_since_contact": 21,
     "status": "overdue",
     "tags": ["college", "close friend"],
-    "bio": "My freshman-year roommate. We still swap book recommendations and plan one hiking trip every fall.",
+    "bio": "Freshman-year roommate and hiking buddy.",
     "goal": 14,
     "next_due_date": "2026-04-07"
   },
@@ -19,7 +19,7 @@
     "days_since_contact": 10,
     "status": "almost due",
     "tags": ["work", "mentor"],
-    "bio": "Former team lead who gives practical career advice and always asks about my side projects.",
+    "bio": "Former team lead with solid career advice.",
     "goal": 12,
     "next_due_date": "2026-04-16"
   },
@@ -31,7 +31,7 @@
     "days_since_contact": 5,
     "status": "on-track",
     "tags": ["neighbor", "gym"],
-    "bio": "Lives two floors down. We usually meet for Saturday morning spin class and coffee after.",
+    "bio": "Neighbor and Saturday spin class friend.",
     "goal": 14,
     "next_due_date": "2026-04-23"
   },
@@ -43,7 +43,7 @@
     "days_since_contact": 34,
     "status": "overdue",
     "tags": ["volunteering", "community"],
-    "bio": "We met while organizing food drives. He is great at turning big ideas into action plans.",
+    "bio": "Met at food drives; great at action plans.",
     "goal": 21,
     "next_due_date": "2026-04-01"
   },
@@ -55,7 +55,7 @@
     "days_since_contact": 13,
     "status": "almost due",
     "tags": ["design", "creative"],
-    "bio": "A designer friend from a hackathon. We review each other's portfolios every few months.",
+    "bio": "Designer friend from a hackathon.",
     "goal": 15,
     "next_due_date": "2026-04-16"
   },
@@ -67,7 +67,7 @@
     "days_since_contact": 2,
     "status": "on-track",
     "tags": ["running", "weekend"],
-    "bio": "Training partner for half-marathons. We check in weekly to keep each other consistent.",
+    "bio": "Half-marathon training partner.",
     "goal": 10,
     "next_due_date": "2026-04-22"
   },
@@ -79,7 +79,7 @@
     "days_since_contact": 18,
     "status": "overdue",
     "tags": ["travel", "language exchange"],
-    "bio": "Met during a language exchange meetup. We practice Spanish and plan budget trips together.",
+    "bio": "Language exchange and travel buddy.",
     "goal": 14,
     "next_due_date": "2026-04-10"
   },
@@ -91,7 +91,7 @@
     "days_since_contact": 7,
     "status": "on-track",
     "tags": ["startup", "accountability"],
-    "bio": "Friend from an indie founders group. We do monthly check-ins on goals and product milestones.",
+    "bio": "Indie founders group friend.",
     "goal": 14,
     "next_due_date": "2026-04-21"
   }
