@@ -1,15 +1,9 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { FiPlus } from 'react-icons/fi';
 import Friends from '@/components/Friends/Friends';
-
-const summaryCards = [
-    { value: '10', label: 'Total Friends' },
-    { value: '3', label: 'On Track' },
-    { value: '6', label: 'Need Attention' },
-    { value: '12', label: 'Interactions This Month' },
-];
+import { getTimelineEntries, subscribeTimelineEntries } from '@/lib/timelineStore';
 
 const LoadingView = () => (
     <div className="flex min-h-[60vh] items-center justify-center">
@@ -22,6 +16,7 @@ const LoadingView = () => (
 
 const HomePage = () => {
     const [friends, setFriends] = useState([]);
+    const [timelineEntries, setTimelineEntries] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
@@ -48,6 +43,45 @@ const HomePage = () => {
             isMounted = false;
         };
     }, []);
+
+    useEffect(() => {
+        const syncEntries = () => setTimelineEntries(getTimelineEntries());
+
+        syncEntries();
+        const unsubscribe = subscribeTimelineEntries(syncEntries);
+
+        return () => {
+            unsubscribe();
+        };
+    }, []);
+
+    const summaryCards = useMemo(() => {
+        const now = new Date();
+        const currentMonth = now.getMonth();
+        const currentYear = now.getFullYear();
+
+        const onTrackCount = friends.filter((friend) => friend.status === 'on-track').length;
+        const needAttentionCount = friends.filter((friend) => friend.status !== 'on-track').length;
+        const interactionsThisMonth = timelineEntries.filter((entry) => {
+            const interactionDate = new Date(entry.date || entry.createdAt);
+
+            if (Number.isNaN(interactionDate.getTime())) {
+                return false;
+            }
+
+            return (
+                interactionDate.getMonth() === currentMonth &&
+                interactionDate.getFullYear() === currentYear
+            );
+        }).length;
+
+        return [
+            { value: friends.length, label: 'Total Friends' },
+            { value: onTrackCount, label: 'On Track' },
+            { value: needAttentionCount, label: 'Need Attention' },
+            { value: interactionsThisMonth, label: 'Interactions This Month' },
+        ];
+    }, [friends, timelineEntries]);
 
     if (isLoading) {
         return (
