@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# KeenKeeper
 
-## Getting Started
+KeenKeeper is a friendship management web app that helps users track meaningful relationships, log interactions, and view simple social analytics in one clean dashboard.
 
-First, run the development server:
+## Technologies Used
+
+- Next.js (App Router)
+- React
+- Tailwind CSS + DaisyUI
+- Recharts
+- React Icons
+- React Toastify
+
+## Key Features
+
+1. Smart Friends Dashboard
+	- View all friends in a responsive card grid with profile image, tags, contact status, and quick access to details.
+
+2. Friend Detail + Quick Check-In
+	- Use Call, Text, or Video buttons to instantly create timeline interaction entries and show toast feedback.
+
+3. Timeline + Friendship Analytics
+	- Track interaction history in a timeline view and visualize Call/Text/Video distribution through a pie chart analytics page.
+
+## Run Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open http://localhost:3000 in your browser.
