@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Maya Thompson",
+    "picture": "https://i.ibb.co.com/wh813pTt/8.jpg",
+    "email": "maya.thompson@gmail.com",
+    "days_since_contact": 21,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "My freshman-year roommate. We still swap book recommendations and plan one hiking trip every fall.",
+    "goal": 14,
+    "next_due_date": "2026-04-07"
+  },
+  {
+    "id": 2,
+    "name": "Daniel Kim",
+    "picture": "https://i.ibb.co.com/sBcKjfX/7.jpg",
+    "email": "daniel.kim@outlook.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["work", "mentor"],
+    "bio": "Former team lead who gives practical career advice and always asks about my side projects.",
+    "goal": 12,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 3,
+    "name": "Aisha Rahman",
+    "picture": "https://i.ibb.co.com/ccPvp6VP/6.jpg",
+    "email": "aisha.rahman@yahoo.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["neighbor", "gym"],
+    "bio": "Lives two floors down. We usually meet for Saturday morning spin class and coffee after.",
+    "goal": 14,
+    "next_due_date": "2026-04-23"
+  },
+  {
+    "id": 4,
+    "name": "Carlos Mendes",
+    "picture": "https://i.ibb.co.com/4ZhKYQRL/5.jpg",
+    "email": "carlos.mendes@protonmail.com",
+    "days_since_contact": 34,
+    "status": "overdue",
+    "tags": ["volunteering", "community"],
+    "bio": "We met while organizing food drives. He is great at turning big ideas into action plans.",
+    "goal": 21,
+    "next_due_date": "2026-04-01"
+  },
+  {
+    "id": 5,
+    "name": "Priya Nair",
+    "picture": "https://i.ibb.co.com/4w0zRtRp/4.jpg",
+    "email": "priya.nair@icloud.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["design", "creative"],
+    "bio": "A designer friend from a hackathon. We review each other's portfolios every few months.",
+    "goal": 15,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 6,
+    "name": "Ethan Brooks",
+    "picture": "https://i.ibb.co.com/h1Jfmqn1/3.jpg",
+    "email": "ethan.brooks@gmail.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["running", "weekend"],
+    "bio": "Training partner for half-marathons. We check in weekly to keep each other consistent.",
+    "goal": 10,
+    "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 7,
+    "name": "Sofia Petrova",
+    "picture": "https://i.ibb.co.com/bjfBdWyn/2.jpg",
+    "email": "sofia.petrova@mail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["travel", "language exchange"],
+    "bio": "Met during a language exchange meetup. We practice Spanish and plan budget trips together.",
+    "goal": 14,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 8,
+    "name": "Noah Sinclair",
+    "picture": "https://i.ibb.co.com/xKvsQxbz/1.jpg",
+    "email": "noah.sinclair@fastmail.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["startup", "accountability"],
+    "bio": "Friend from an indie founders group. We do monthly check-ins on goals and product milestones.",
+    "goal": 14,
+    "next_due_date": "2026-04-21"
+  }
+]
