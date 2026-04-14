@@ -81,7 +81,7 @@ const FriendDetailsPanel = ({ friend }) => {
             <h2 className="text-xl font-semibold text-[#334155]">Relationship Goal</h2>
             <button
               type="button"
-              className="rounded-md border border-zinc-200 px-3 py-1 text-sm font-medium text-[#64748b]"
+              className="btn btn-ghost rounded-md border border-zinc-200 bg-white px-3 py-1 text-sm font-medium normal-case text-[#64748b] hover:bg-zinc-50"
             >
               Edit
             </button>
@@ -93,7 +93,7 @@ const FriendDetailsPanel = ({ friend }) => {
         </section>
 
         <section className="rounded-md border border-zinc-200 bg-white p-4 shadow-[0_1px_2px_rgba(16,24,40,0.05)]">
-          <h2 className="text-xl font-semibold text-[#334155]">Quick Check-In</h2>
+          <h2 className="text-3xl font-semibold tracking-tight text-[#2f4f45]">Quick Check-In</h2>
 
           <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-3">
             {checkInButtons.map(({ key, label, Icon }) => (
@@ -101,10 +101,10 @@ const FriendDetailsPanel = ({ friend }) => {
                 key={key}
                 type="button"
                 onClick={() => handleQuickCheckIn(key)}
-                className="flex items-center justify-center gap-2 rounded-md border border-zinc-200 bg-[#f8fafc] px-4 py-4 text-sm font-medium text-[#0f2747] transition-colors hover:bg-zinc-100"
+                className="btn flex h-24 flex-col items-center justify-center gap-2 rounded-lg border border-zinc-200 bg-[#eef2f6] px-4 py-3 text-[#1f2937] transition-colors hover:bg-[#e8edf3]"
               >
-                <Icon className="text-base" />
-                {label}
+                <Icon aria-hidden="true" className="text-2xl sm:text-3xl" />
+                <span className="text-lg font-medium leading-none sm:text-2xl">{label}</span>
               </button>
             ))}
           </div>

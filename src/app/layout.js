@@ -25,12 +25,19 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col overflow-x-hidden">
+      <body className="min-h-full flex flex-col overflow-x-hidden" suppressHydrationWarning>
         <Navbar />
         <div className="flex-1">{children}</div>
         <Footer />
-        <ToastContainer position="top-right" autoClose={2500} hideProgressBar theme="colored" />
+        <ToastContainer
+          position="top-right"
+          autoClose={2500}
+          hideProgressBar
+          theme="light"
+          toastStyle={{ background: "#ffffff", color: "#1f5f50" }}
+        />
       </body>
     </html>
   );

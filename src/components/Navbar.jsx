@@ -15,15 +15,17 @@ const Navbar = () => {
 
   return (
     <header className="w-full border-b border-zinc-200 bg-white">
-      <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-3 px-4 py-3 sm:flex-row sm:gap-0 sm:px-6 sm:py-0 sm:h-20">
+      <div className="flex w-full items-center justify-between gap-3 px-4 py-3 sm:h-20 sm:px-6 sm:py-0">
         <Link
           href="/"
-          className="text-2xl font-bold tracking-tight text-[#0d2747] sm:text-[30px]"
+          className="text-xl font-extrabold tracking-tight leading-none sm:text-[28px]"
+          aria-label="KeenKeeper"
         >
-          KeenKeeper
+          <span className="text-[#1f2a44]">Keen</span>
+          <span className="text-[#2f6b5d]">Keeper</span>
         </Link>
 
-        <nav aria-label="Main navigation">
+        <nav aria-label="Main navigation" className="ml-auto">
           <ul className="flex flex-wrap items-center justify-center gap-2 rounded-lg bg-white p-1">
             {navItems.map(({ href, label, Icon }) => {
               const isActive = pathname === href;

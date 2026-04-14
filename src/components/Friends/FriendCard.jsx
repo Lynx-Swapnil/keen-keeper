@@ -62,7 +62,7 @@ const FriendCard = ({ friend }) => {
 
             <button
                 type="button"
-                className="flex w-full items-center justify-center gap-2 rounded-md border border-zinc-200 bg-white px-4 py-3 text-sm font-medium text-[#0f2747]"
+                className="btn btn-ghost flex w-full items-center justify-center gap-2 rounded-md border border-zinc-200 bg-white px-4 py-3 text-sm font-medium normal-case text-[#0f2747] hover:bg-zinc-50"
             >
                 <FiClock className="text-base" />
                 Snooze 2 Weeks
@@ -70,7 +70,7 @@ const FriendCard = ({ friend }) => {
 
             <button
                 type="button"
-                className="flex w-full items-center justify-center gap-2 rounded-md border border-zinc-200 bg-white px-4 py-3 text-sm font-medium text-[#0f2747]"
+                className="btn btn-ghost flex w-full items-center justify-center gap-2 rounded-md border border-zinc-200 bg-white px-4 py-3 text-sm font-medium normal-case text-[#0f2747] hover:bg-zinc-50"
             >
                 <FiArchive className="text-base" />
                 Archive
@@ -78,7 +78,7 @@ const FriendCard = ({ friend }) => {
 
             <button
                 type="button"
-                className="flex w-full items-center justify-center gap-2 rounded-md border border-zinc-200 bg-white px-4 py-3 text-sm font-medium text-[#ef4444]"
+                className="btn btn-ghost flex w-full items-center justify-center gap-2 rounded-md border border-zinc-200 bg-white px-4 py-3 text-sm font-medium normal-case text-[#ef4444] hover:bg-red-50"
             >
                 <FiTrash2 className="text-base" />
                 Delete

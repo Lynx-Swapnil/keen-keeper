@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { FaFacebookF } from 'react-icons/fa';
-import { FiCircle } from 'react-icons/fi';
+import { GrInstagram } from 'react-icons/gr';
 import { RiTwitterXLine } from 'react-icons/ri';
 
 const Footer = () => {
@@ -20,10 +20,10 @@ const Footer = () => {
                 <div className="mt-4 flex items-center justify-center gap-3">
                     <Link
                         href="#"
-                        aria-label="Social profile"
+                        aria-label="Instagram"
                         className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#1f2937] transition-transform hover:scale-105"
                     >
-                        <FiCircle className="text-base" />
+                        <GrInstagram className="text-base" />
                     </Link>
                     <Link
                         href="#"

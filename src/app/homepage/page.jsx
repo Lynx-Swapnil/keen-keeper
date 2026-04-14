@@ -103,8 +103,7 @@ const HomePage = () => {
                 </p>
 
                 <button
-                    type="button"
-                    className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-md bg-[#155946] px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#104739] sm:w-auto"
+                    className=" btn mt-8 inline-flex w-full items-center justify-center gap-2 rounded-md bg-[#155946] px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#104739] sm:w-auto"
                 >
                     <FiPlus className="text-base" aria-hidden="true" />
                     Add a Friend
